@@ -2,7 +2,7 @@
 #include <linux/init.h>
 #include <linux/module.h>
 
-MODULE_LICENSE("Dual BSD/GPL"); /* License 선언 */
+MODULE_LICENSE("Dual BSD/GPL"); /* License 선언  */
 MODULE_DESCRIPTION("Hello module"); /* 모듈 설명 */  
 
 /* 모듈 로드시 수행하는, 초기 함수 */
