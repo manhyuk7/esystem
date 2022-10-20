@@ -9,14 +9,14 @@ MODULE_DESCRIPTION("Hello module"); /* 모듈 설명 */
 static int hello_init_module(void)
 {
     /* 커널에 정의된, printf 같은 기능 */ 
-    printk(KERN_ALERT "Hello, Module is initialized\n");
+    printk(KERN_INFO "Hello, Module is initialized\n");
     return 0;
 }
 
 /* 모듈 제거시 수행하는, 종료 함수 */
 static void hello_exit_module(void)
 {
-    printk(KERN_ALERT "Goodbye, Module is exited\n");
+    printk(KERN_INFO "Goodbye, Module is exited\n");
 }
 
 module_init(hello_init_module); /* 모듈 함수 초기화 */
