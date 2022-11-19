@@ -127,8 +127,8 @@ static void switch_exit(void){
 
     unregister_chrdev(MAJOR_NUMBER, DEVICE_NAME); /* /dev/button_dd unregister */
 	
-    /* Interrupt ?�제 */
-    free_irq(switch_irq, NULL);
+    /* Interrupt ?´ì œ */
+    free_irq(switch_irq, "GOOD");
     gpio_free(GPIO_SW);
     gpio_free(GPIO_LED1);
     gpio_free(GPIO_LED2);
