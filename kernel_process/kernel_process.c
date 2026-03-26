@@ -4,7 +4,7 @@
 #include <linux/sched.h>
 
 MODULE_LICENSE("Dual BSD/GPL"); /* License 선언 */
-MODULE_DESCRIPTION("Hello module"); /* 모듈 설명 */  
+MODULE_DESCRIPTION("Hello module"); /* 모듈 설명 */   
 
 /* 모듈 로드시 수행하는, 초기 함수 */
 static int process_init(void)
